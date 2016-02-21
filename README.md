@@ -1,5 +1,5 @@
 # drag-timing
-A system for the timing of radio control monster trucks. Could also be used for any form of timed drag racing.
+A system for the timing and event handling for radio control monster trucks. Could also be used for any form of timed drag racing.
 
 ![Image of system](http://nrctpa.org/photo_gallery/2014SpringNationals/album/Racing/slides/Image71.jpg)
 
@@ -12,7 +12,7 @@ I created this software/hardware back in 2002 to fill a need when running our lo
 Trucks are staged to the starting line breaking a sensor beam. When start is pressed from the software, a countdown timer begins in the Arduino. Every 0.4 seconds a light is turned on; orange, orange, orange, green. Another timer within the Arduino then starts. When the truck leaves the start line, a timestamp is saved known as the "reaction time". When the truck crosses the finish line, another timestamp is saved known as the "elapsed time". 
 
 ### Software
-All data is stored in a SQLite database.
+I am not going to upload the VB6 code as very few would be able to make use of it. Instead, I will use this space to be the home of a new Python/QT UI.
 
 Usage flow is as such:
 - An event is created
@@ -20,6 +20,8 @@ Usage flow is as such:
 - Trucks are created for those drivers
 - Trucks/drivers are then registered for an event
 - Runs are performed and saved
+
+All data to be stored in a SQLite database.
 
 ## Hardware
 
@@ -47,21 +49,26 @@ int outL1RedPin = 9;
 int outL2StagedPin = 10;
 int outL2RedPin = 11;
 ```
+Arduino outputs are 5Vdc and can only handle 40 mA. Some method of changing to a higher current, and most likely voltage, is necessary. My current system uses a custom I/O board that gets the job done but is a little expensive and time consuming to fabricate. There are other options:
+- An Opto22 Output module and rack like the [PB16A](http://www.opto22.com/site/pr_details.aspx?cid=4&item=PB16A)
+- some sort of Arduino relay shield or module
+- Perhaps this [IRF520 MOS Driver Module](http://www.gearbest.com/sensors/pp_226185.html) @ $1.47 ea
+
+I like the solid state options reather than mechanical relays. 
 
 ### Sensors
 Start and finish line sensors are needed. For the start I have been using Banner Engineering SM312LV retroreflective photoelectric sensors. For the finish I used Banner Engineering SM31E & SM31R infrared opposed beam sensors. They are relatively inexpensive (when sourced on eBay), very fast, and operate at a wide voltage range (10-30 Vdc).
 ### Power supply
 You will need a power supply. Choose one that will power your sensors and lights.
 ### BetaBrite sign
-Not required but a nice touch. I sourced mine off eBay. It is controled from software on the PC.
-
+Not required but a nice touch. I sourced mine off eBay. It is controled from software on the PC via a USB port and a USB->RS232 converter.
 
 ## Installation
 
 ### Arduino
 Install the Arduino software and download the latest pde file.
 ### PC
-TBD
+Not yet...
 
 
 ## License
