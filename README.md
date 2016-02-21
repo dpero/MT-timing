@@ -49,7 +49,7 @@ int outL2RedPin = 11;
 ```
 
 ### Sensors
-Start and finish line sensors are needed. For the start I have been using Banner Engineering SM312LV retroreflective photoelectric sensors. For the finish I used Banner Engineering SM31E & SM31R infrared opposed beam sensors. They are relative inexpensive (when sourced on eBay), very fast, and operate at a wide voltage range (10-30 Vdc).
+Start and finish line sensors are needed. For the start I have been using Banner Engineering SM312LV retroreflective photoelectric sensors. For the finish I used Banner Engineering SM31E & SM31R infrared opposed beam sensors. They are relatively inexpensive (when sourced on eBay), very fast, and operate at a wide voltage range (10-30 Vdc).
 ### Power supply
 You will need a power supply. Choose one that will power your sensors and lights.
 ### BetaBrite sign
