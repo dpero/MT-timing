@@ -60,6 +60,8 @@ I like the solid state options reather than mechanical relays.
 Start and finish line sensors are needed. For the start I have been using Banner Engineering SM312LV retroreflective photoelectric sensors. For the finish I used Banner Engineering SM31E & SM31R infrared opposed beam sensors. They are relatively inexpensive (when sourced on eBay), very fast, and operate at a wide voltage range (10-30 Vdc).
 ### Power supply
 You will need a power supply. Choose one that will power your sensors and lights.
+### Enclosure
+You will need some sort of enclosure to put all this stuff in. My first system used an old PC tower. My current system is in a MDF box. If I were to build another, I would go smaller. The stack lights would be next to each starting line with the cables going back to a central box housing the Arduino and power supply.
 ### BetaBrite sign
 Not required but a nice touch. I sourced mine off eBay. It is controled from software on the PC via a USB port and a USB->RS232 converter.
 
