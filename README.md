@@ -1,5 +1,5 @@
 # MT-timing
-A system for the timing and event handling for radio control monster trucks. Could also be used for any form of timed drag racing.
+A system for the timing and event handling of radio control monster truck racing. Could also be used for other forms of timed drag racing.
 
 ![Image of system](http://nrctpa.org/photo_gallery/2014SpringNationals/album/Racing/slides/Image71.jpg)
 
