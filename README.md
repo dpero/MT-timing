@@ -8,7 +8,7 @@ I created this software/hardware back in 2002 to fill a need when running our lo
 
 ## Overview
 
-###General
+### General
 Trucks are staged to the starting line breaking a sensor beam. When start is pressed from the software, a countdown timer begins in the Arduino. Every 0.4 seconds a light is turned on; orange, orange, orange, green. Another timer within the Arduino then starts. When the truck leaves the start line, a timestamp is saved known as the "reaction time". When the truck crosses the finish line, another timestamp is saved known as the "elapsed time". 
 
 ### Software
