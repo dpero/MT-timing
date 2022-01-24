@@ -28,7 +28,7 @@ All data to be stored in a SQLite database.
 ### Arduino
 I chose the Arduino platform for performing timing duties. The code has been proven to work on a Diecimila and UNO. Other boards will probably work so long as they have the required inputs and outputs. It can be powered by USB but I like to use an external 5V supply.
 
-####Inputs
+###Inputs
 Minimum of 2.
 
 For each lane, the same input is used for start and finish. The code will seperate start from finish. The inputs are tied to IRQs for speedy handling.
@@ -39,7 +39,7 @@ int inTreeModePin = 12; // off = normal, on = pro tree
 ```
 Arduino inputs are 5V and some method is needed to convert sensor voltage down to 5Vdc. Optically isolated is the way to go. I have used an [Opto22 IDC5](http://www.opto22.com/site/pr_details.aspx?cid=4&item=IDC5) DC input module.
 
-####Outputs
+###Outputs
 Minimum of 8.
 
 Some method of lighting is needed. Industrial stack lights work well for this. I have used Telemecanique brand but most any of them would work. Try to use LED lamps to keep current requirements down.
